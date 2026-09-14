@@ -18,13 +18,35 @@ Una volta avviato il programma, il LED viene acceso e rimane acceso permanenteme
 
 ## 🧰 Componenti utilizzati
 
-- Arduino
+- Arduino(Qualsiasi va bene)
 - 1 LED
-- 1 resistenza per il LED
+- 1 resistenza per il LED da 220 Ω
 - Breadboard
 - Cavi jumper
 
 > Se hai utilizzato il LED integrato sulla scheda Arduino, possiamo modificare questa sezione per descrivere esattamente il tuo circuito.
+
+---
+
+## 🔌 Collegamenti
+
+Il LED è collegato al pin digitale 13 dell'Arduino Mega 2560 R3.
+
+Il collegamento è realizzato nel seguente modo:
+
+**D13 → Resistenza 220 Ω → Anodo LED → Catodo LED → GND**
+
+La resistenza da 220 Ω viene utilizzata per limitare la corrente che attraversa il LED e proteggerlo.
+
+### Schema
+
+```text
+Arduino Mega 2560 R3
+
+D13 ────[ 220 Ω ]────►|──── GND
+                      LED
+
+Il LED viene alimentato tramite il pin digitale 13 e rimane acceso continuamente.
 
 ---
 
